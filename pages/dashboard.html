@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Sibasi Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h3>Sibasi Ltd</h3>
+        <button class="sidebar-toggle" aria-label="Toggle sidebar">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="dashboard.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="articles.html"><i class="fas fa-newspaper"></i> Articles</a></li>
+        <li><a href="login.html" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <div class="todo-container">
+        <h2>To-Do List</h2>
+        <div class="todo-controls">
+          <select id="task-category">
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+          </select>
+          <input type="text" id="new-task" placeholder="Add a new task">
+          <button id="add-task">Add Task</button>
+        </div>
+        <ul id="task-list" draggable="true"></ul>
+      </div>
+    </main>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="../scripts/todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles - Sibasi Ltd</title>
+  <!-- Temporary CSP for testing; remove in production -->
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="layout">
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h3>Sibasi Ltd</h3>
+        <button class="sidebar-toggle" aria-label="Toggle sidebar">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <ul class="sidebar-menu">
+        <li><a href="dashboard.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
+        <li><a href="articles.html" class="active"><i class="fas fa-newspaper"></i> <span>Articles</span></a></li>
+        <li><a href="login.html" class="logout"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <div class="articles-container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="Tech">Tech</button>
+          <button class="filter-btn" data-category="Business">Business</button>
+        </div>
+        <div class="cards-container">
+          <div class="card" data-category="Tech">
+            <img src="https://images.unsplash.com/photo-1516321310768-77f0f71419a2" alt="AI in Business" loading="lazy">
+            <div class="card-content">
+              <h3>The Future of AI in Business</h3>
+              <p>Artificial intelligence is reshaping industries with automation and data-driven insights.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+          <div class="card" data-category="Business">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Remote Work" loading="lazy">
+            <div class="card-content">
+              <h3>5 Tips for Effective Remote Work</h3>
+              <p>Boost productivity and collaboration with these proven remote work strategies.</p>
+              <a href="#" class="read-momentore"></a>
+            </div>
+          </div>
+          <div class="card" data-category="Tech">
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" alt="Blockchain" loading="lazy">
+            <div class="card-content">
+              <h3>Blockchain Beyond Cryptocurrency</h3>
+              <p>Discover how blockchain is transforming supply chains and healthcare.</p>
+              <a href="#" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../scripts/articles.js"></script>
+</body>
+</html>

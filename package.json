@@ -1,0 +1,13 @@
+{
+  "name": "ibasi-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vite": "^4.0.0",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "canvas-confetti": "^1.6.0"
+  }
+}
